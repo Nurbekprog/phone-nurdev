@@ -105,7 +105,7 @@ body {
 .animated-green,
 .animated-red,
 .green-color {
-  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
 }
 
@@ -162,6 +162,7 @@ body {
   top: 15px;
   right: 10px;
   display: flex;
+  padding: 4px 10px;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -169,7 +170,7 @@ body {
   color: #fff;
   border: 1px solid black;
   border-radius: 5px;
-  background: rgba(0, 0, 0, 0);
+  background: red;
   border: none;
   cursor: pointer
 }
@@ -236,13 +237,15 @@ body {
   position: absolute;
   top: -35px;
   right: 20px;
+  padding: 4px 10px;
   display: flex;
+  border-radius: 5px;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #fff;
-  background: rgba(0, 0, 0, 0);
+  background: red;
   border: none;
   cursor: pointer
 }
@@ -309,13 +312,14 @@ body {
   position: absolute;
   top: -150px;
   right: 10px;
+  width: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #fff;
-  background: rgba(0, 0, 0, 0);
+  background: red;
   border: none;
   cursor: pointer
 }
@@ -405,19 +409,24 @@ body {
 }
 
 .alarm-container {
-  position: relative
+  position: relative;
 }
 
 .alarm-container .close-btn3 {
   position: absolute;
   top: -150px;
+  right: 20px;
+  text-align: center;
+  align-items: center;
+  border-radius: 2px;
+  padding: 4px 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   color: #fff;
-  background: rgba(0, 0, 0, 0);
+  background: red;
   border: none;
   cursor: pointer
 }
@@ -430,7 +439,7 @@ body {
   margin-top: 170px;
   width: 250px;
   padding: 1.25em;
-  background: rgba(255, 255, 255, .43);
+  background: black;
   border-radius: 4px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
   backdrop-filter: blur(6.9px);
@@ -775,5 +784,10 @@ body {
 
 .alarm {
   background: url("./assets/images/alarm.webp") center center no-repeat;
+  background-size: cover
+}
+
+.timer {
+  background: url("./assets/images/timer.webp") center center no-repeat;
   background-size: cover
 }
